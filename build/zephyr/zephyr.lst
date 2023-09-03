@@ -1144,7 +1144,7 @@ void command_interpreter(void)
      798:	f005 fcd4 	bl	6144 <printk>
 
  //--help---------------------------------------------------------------------------------------
-  if((strcmp("HELP",command_string)==0)||(strcmp("?",command_string)==0))
+  if((strcmp("HELP",command_string)==0)||(strcmp("H",command_string)==0))
      79c:	4621      	mov	r1, r4
      79e:	4872      	ldr	r0, [pc, #456]	; (968 <__z_interrupt_stack_SIZEOF+0x128>)
      7a0:	f7ff fe58 	bl	454 <strcmp>

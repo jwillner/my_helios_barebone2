@@ -69,11 +69,11 @@ char version[]="Helios TIIMax SW200219A (c) joachim willner 22.8.2023\n";
 #define HELP_MEMBERS 9
 char help_text[HELP_MEMBERS][BUFFER_LENGTH]=
 {
-"h\n",
-"\n",
-"\n",
-"\n",
-"\n",
+"VERSION or V -> to show Versionh\n",
+"HELP or H -> to show Help\n",
+"PWM or P  with CH1,CH2,CH3 or 1,2,3 and Value from 0.100 -> to set pwm\n",
+"ADC or A with CH1,CH2,CH3 or 1,2,3 -> to read adc \n",
+"STATE or S -> to read state\n",
 "\n",
 "\n",
 "\n",
@@ -228,7 +228,7 @@ void command_interpreter(void)
 	printk("command=%s address=%s data=%s option=%s\n",command_string,address_string,data_string,option_string);
 
  //--help---------------------------------------------------------------------------------------
-  if((strcmp("HELP",command_string)==0)||(strcmp("?",command_string)==0))
+  if((strcmp("HELP",command_string)==0)||(strcmp("H",command_string)==0))
   {
       for (int i = 0; i < HELP_MEMBERS; i++)
       {
