@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "my_helios_board",
+			"path": "../../.."
+		}
+	],
+	"settings": {
+		"nrf-connect.boardRoots": [
+			"${workspaceFolder}"
+		]
+	}
+}
